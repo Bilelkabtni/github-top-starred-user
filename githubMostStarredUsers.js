@@ -8,9 +8,13 @@ exports.config = CONFIG = {
 };
 
 const _requestApi = async (url) => {
-    const headers = {'Authorization': process.env.GITHUB_TOKEN};
+    let headers = null;
+    if (process.env.GITHUB_TOKEN) {
+        headers = {'Authorization': `Basic  ${process.env.GITHUB_TOKEN}`};
+    }
     return await fetch(url, {headers: headers})
-        .then(response => response.json());
+        .then(response => response.json())
+        .catch(err => console.log(err));
 };
 
 const _mapWithStarCount = (users) => {
@@ -18,7 +22,7 @@ const _mapWithStarCount = (users) => {
         return _requestApi(user.repos_url).then((profile) => {
             let totalStars = profile.reduce((acc, obj) => acc + obj.stargazers_count, 0);
             return {login: user.login, total_stars: totalStars};
-        });
+        }).catch(err => Promise.reject(' Authenticated requests get a higher rate limit.\n Please add your token to the .env file to get more access to the API.'));
     });
 };
 

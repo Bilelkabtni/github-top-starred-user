@@ -6,6 +6,7 @@ This project requires **NodeJS**
 Please use node js and run npm install.
 
 To request the GITHUB api please create **.env** file in the main project and insert your generated token there.
+This is needed in case of higher rate request limit
 Example:
 ```
 # .env
@@ -31,6 +32,9 @@ The **getMostStarredUsers** method can accept optional config object by changing
 |`baseUrl`|string| the base URL of the GitHub API example   "**https://api.github.com/search/**" |
 |`topUsers`| number| by default, it will return the most top 5 starred user in your city 
 
+## Demo
+Please Run the npm start will find the most starred javascript developer in Munich.
+
 ## Testing
 Please run npm test.
 
@@ -44,4 +48,4 @@ Please make sure to update tests as appropriate.
 
 ## License
 
-[MIT](https://github.com/Bilelkabtni/github-top-ranked-user/blob/master/LICENSE)
+[MIT](https://github.com/Bilelkabtni/github-top-starred-user/blob/master/LICENSE)
