@@ -1,4 +1,6 @@
 const fetch = require('node-fetch');
+const dotenv = require('dotenv');
+dotenv.config();
 
 exports.config = CONFIG = {
     baseUrl: 'https://api.github.com/search/',
@@ -6,8 +8,7 @@ exports.config = CONFIG = {
 };
 
 const _requestApi = async (url) => {
-    const headers = {'Authorization': 'Basic YmlsZWwua2FidG5pLmlzaUBnbWFpbC5jb206bWVyaWVta2FidG5pNDA='};
-
+    const headers = {'Authorization': process.env.GITHUB_TOKEN};
     return await fetch(url, {headers: headers})
         .then(response => response.json());
 };

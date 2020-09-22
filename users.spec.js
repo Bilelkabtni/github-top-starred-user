@@ -23,7 +23,6 @@ describe('GithubTopRanked', () => {
             expect(finalResult.length).toEqual(2);
         });
     });
-
 });
 
 
