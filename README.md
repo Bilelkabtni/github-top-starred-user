@@ -5,6 +5,12 @@ Node application using the GitHub API [Github doc](https://docs.github.com/en/gi
 This project requires **NodeJS**
 Please use node js and run npm install.
 
+To request the GITHUB api please create **.env** file in the main project and insert your generated token there.
+Example:
+```
+# .env
+GITHUB_TOKEN= {{your_token}}
+```
 
 **getMostStarredUsers** will return a Promise
 **config** is used to set custom config such as requestUrl and number of a listed starred users
