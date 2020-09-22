@@ -1,6 +1,10 @@
 # dependencies
 /node_modules
 
+
+# env
+.env
+
 # IDEs and editors
 /.idea
 .project
