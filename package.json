@@ -1,0 +1,24 @@
+{
+  "name": "top-github-user",
+  "version": "1.0.0",
+  "description": "get the most popular github user by city and ranked repositories ",
+  "repository": {
+    "directory": "https://github.com/Bilelkabtni/github-top-ranked-user"
+  },
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.9.0",
+    "jest": "^26.4.2",
+    "node-fetch": "^2.6.1"
+  },
+  "scripts": {
+    "mock": "node index.js javascript munich",
+    "test": "jest --config ./jest.config.json --detectOpenHandles",
+    "test:watch": "npm run test -- --watch",
+    "lint": "./node_modules/.bin/eslint index.js"
+  },
+  "author": "bilel kabtni",
+  "license": "MIT"
+}

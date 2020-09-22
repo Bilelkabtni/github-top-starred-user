@@ -1,0 +1,6 @@
+{
+  "testRegex": "((\\.|/*.)(spec))\\.js?$",
+  "testPathIgnorePatterns": [
+    "/node_modules\/(?!my-package)(.*)"
+  ]
+}
