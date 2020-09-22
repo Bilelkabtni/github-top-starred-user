@@ -6,7 +6,7 @@ This project requires **NodeJS**
 Please use node js and run npm install.
 
 To request the **Github API** please create **.env** file in the main project and insert your generated token there.
-This is needed in case of higher rate request limit
+This is needed in case of a higher rate request limit
 Example:
 ```
 # .env
