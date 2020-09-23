@@ -35,15 +35,27 @@ The **getMostStarredUsers** method can accept optional config object by changing
 ## How to use: 
 Please Run the npm start and give the command the language and the city (language and city are a mandatory parameters).
 or type:
-```npm run start {language} {location}```
+```
+npm run start {language} {location}
+```
 Example: 
-```npm run start javascript munich```
+```
+npm run start javascript munich
+```
 
 ## Testing
-Please run npm test.
+Please run:
+
+```
+npm test
+```
 
 ## Linting
-Please run npm lint.
+Please run:
+
+```
+npm lint
+```
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
