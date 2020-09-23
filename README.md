@@ -3,7 +3,7 @@
 Node application using the GitHub API [Github doc](https://docs.github.com/en/github) to find the 5 most highly starred developers in your city who use specified programming language. The rank is calculated as the sum of all-stars for all their projects
 ## Installation
 This project requires **NodeJS**
-Please use node js and run npm install.
+Please use node js and run **npm install**.
 
 To request the **Github API** please create **.env** file in the main project and insert your generated token there.
 This is needed in case of a higher rate request limit
@@ -32,8 +32,12 @@ The **getMostStarredUsers** method can accept optional config object by changing
 |`baseUrl`|string| the base URL of the GitHub API example   "**https://api.github.com/search/**" |
 |`topUsers`| number| by default, it will return the most top 5 starred user in your city 
 
-## Demo
-Please Run the npm start will find the most starred javascript developer in Munich.
+## How to use: 
+Please Run the npm start and give the command the language and the city (language and city are a mandatory parameters).
+or type:
+```npm run start {language} {location}```
+Example: 
+```npm run start javascript munich```
 
 ## Testing
 Please run npm test.

@@ -15,7 +15,7 @@
     "node-fetch": "^2.6.1"
   },
   "scripts": {
-    "start": "node index.js javascript munich",
+    "start": "node index.js",
     "test": "jest --config ./jest.config.json --detectOpenHandles",
     "test:watch": "npm run test -- --watch",
     "lint": "./node_modules/.bin/eslint index.js"
